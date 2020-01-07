@@ -1,0 +1,160 @@
+:root {
+  --oliveGreen:#5C5F30;
+  --redOrange:#EE7840;
+  --champagne:#F0DAC0;
+  --coral:#F6A970;
+}
+
+section.about{
+  background: white;
+  display: flex;
+}
+
+h1.about, p.about {
+  width: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1.about {
+  font-size: 42px;
+  font-weight: 300;
+  margin-top: 350px;
+}
+
+p.about {
+  color: rgb(103, 103, 103);
+  margin-top: 20px;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* circles art begins */
+
+#circles-wrapper {
+  position: relative;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  width: 800px;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+}
+
+#col1 {
+  background: var(--oliveGreen);
+  border-bottom-left-radius: 200px;
+}
+
+#col1::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--redOrange);
+  border-radius: 100px;
+}
+
+#col1::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--champagne);
+  border-bottom-left-radius: 200px;
+}
+
+#col2 {
+  background: var(--champagne);
+  border-radius: 100px;
+}
+
+#col2::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--coral);
+  border-top-left-radius: 200px;
+}
+
+#col2::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--oliveGreen);
+  border-top-right-radius: 200px;
+}
+
+#col3 {
+  background: var(--redOrange);
+  border-top-left-radius: 200px;
+}
+
+#col3::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--champagne);
+  border-top-right-radius: 200px;
+}
+
+#col3::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--coral);
+  border-radius: 100px;
+}
+
+#col4 {
+  background: var(--redOrange);
+  border-radius: 0 20px 200px 0;
+}
+
+#col4::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--oliveGreen);
+  border-radius: 100px;
+}
+
+#col4::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  background: var(--redOrange);
+  border-bottom-right-radius: 200px;
+}
+
+/* circles art ends */

@@ -3,118 +3,128 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Clara Song's site</title>
+  <title>Clara Song's personal site</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/about.css" />
 </head>
 
 <body>
-  <header>CLARA SONG</header>
   <div class="sidenav">
     <ul>
-      <li>About Me</li>
-      <li>Upcoming</li>
-      <li>Past XP</li>
-      <li>Things I'm Proud of</li>
+      <li>CLARA SONG</li>
+      <li>UPCOMING</li>
+      <li>PAST XP</li>
+      <li>THINGS I'M PROUD OF</li>
     </ul>
   </div>
 
-  <section>
-    <h1>ABOUT ME</h1>
-    <p>I am a junior at Cornell University studying Computer Science in the College of Engineering. I only just entered
-      the field, but I am excited to begin my journey as a woman in computer science!
-      Right now, I do not have a clear picture of what I want to pursue after graduation. Computer Science is such a
-      broad term since there are so many fields closely tied to Computer Science. However, I aspire to be like the
-      passionate people in my family, especially my sister-in-law Cassidy Williams. My greatest hope is that regardless
-      of my passion, I will be confident enough in my field to love what I do and be able to make a difference in
-      people.
+  <div class="content">
+    <section class="about">
+      <div class="about" id="about-text">
+        <h1 class="about">CLARA SONG</h1>
+        <p class="about">Getting Out Into the World and Coding!</p>
+      </div>
+      <div id="circles-wrapper">
+        <div class="circle" id="col1"></div>
+        <div class="circle" id="col2"></div>
+        <div class="circle" id="col3"></div>
+        <div class="circle" id="col4"></div>
+      </div>
+    </section>
 
-      As of now, I am interested in exploring UI and app development. I am still very open to learning other ways to
-      apply computer science, especially in other fields such as medicine and education.
-
-      I am goofy and naive, and I love sharing jokes, funny stories, or gems of obscure facts. I may be small, but my
-      personality is full of energy. On Friday nights, I will be lip-syncing Disney and Weezer songs, playing board
-      games, or rock climbing with friends. </p>
-    <div>Circle Art stuff</div>
-  </section>
-
-  <section>
     <h1>UPCOMING</h1>
-    <div>
-      <h2>Google Summer 2020 Internship</h2>
-      <p>I'm excited to say that I will working for Google this coming summer! I'll be in Bellevue,
-        Washington on the Chrome OS Enterprise team. I'm especially so thankful to one of my
-        interviewers for this opportunity.
-        <!-- She was the first female interviewer I have ever had.
+    <section>
+      <div class="topic-wrapper" id="google-wrapper">
+        <div class="title" id="google-title">
+          <h2>Google Summer 2020 Internship</h2>
+        </div>
+        <div class="description" id="google-description">
+          <p>I'm excited to say that I will working for Google this coming summer! I'll be in Bellevue,
+            Washington on the Chrome OS Enterprise team.
+            <!-- I'm especially so thankful to one of my
+            interviewers for this opportunity. She was the first female interviewer I have ever had.
         Her interview question was unique and fun, and she was so lively to talk to! She was a
         huge encouragement to me as a fellow woman in computer science. I am so glad to be
         interviewed by her regardless of the results, I thought at the time.  -->
-        I'll
-        be doing backend development for the first time! I'm glad that I'll be trying out something
-        new this coming summer, and I've been introducing myself to more backend dev before the
-        semester starts in order to prepare.
-      </p>
-    </div>
-    <div>
-      <h2>Starting HCI Research</h2>
-      <p>Towards the end of last fall semester, I looked into Human Computer Interaction
-        research at Cornell, coming into to contact with a couple professors who are gracious
-        to take me in. I thought I didn't like school so I fervently denied considering grad
-        school for 2 years. But, I recently have started questioning whether undergrad is enough.
-        Grades alone have become less of a motivation for me to learn, which has been helpful
-        and hurtful. What I want is to work with people again like I did during my
-        internship last summer. I want to work on things that means more than just a grade. I'm
-        looking forward to doing research this coming spring semester! Hopefully, I'll choose
-        a professor and project soon!
-      </p>
-    </div>
-  </section>
+            I'll be doing backend development for the first time! I'm glad that I'll be trying out something
+            new this coming summer, and I've been introducing myself to more backend dev before the
+            semester starts in order to prepare.
+          </p>
+        </div>
+      </div>
+      <div class="topic-wrapper" id="research">
+        <div class="title" id="research-title">
+          <h2>Starting HCI Research</h2>
+        </div>
+        <div class="description" id="research-description">
+          <p>Towards the end of last fall semester, I looked into Human Computer Interaction
+            research at Cornell, coming into to contact with a couple professors who are gracious
+            to take me in. I thought I didn't like school so I fervently denied considering grad
+            school for 2 years. But, I recently have started questioning whether undergrad is enough.
+            Grades alone have become less of a motivation for me to learn, which has been helpful
+            and hurtful. What I want is to work with people again like I did during my
+            internship last summer. I want to work on things that means more than just a grade. I'm
+            looking forward to doing research this coming spring semester! Hopefully, I'll choose
+            a professor and project soon!
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section>
     <h1>PAST XP</h1>
-    <div>
-      <h2>PayPal Summer 2019 Internship</h2>
-      <p>This was my first internship! I was on the Guest-Checkout team, and I mainly did
-        frontend web development work using JavaScript with React, Redux, and Emotion. I also
-        expanded on the GraphQL server to support my features. My main project was expanding
-        the new Checkout Lite app to additional markets by building the Know Your Customer
-        fields. On top of that, I built out billing and shipping country selection support for
-        Inline Guest Checkout.</p>
-    </div>
-  </section>
+    <section>
+      <div class="topic-wrapper" id="paypal">
+        <div class="title" id="paypal-title">
+          <h2>PayPal Summer 2019 Internship</h2>
+        </div>
+        <p>This was my first internship! I was on the Guest-Checkout team, and I mainly did
+          frontend web development work using JavaScript with React, Redux, and Emotion. I also
+          expanded on the GraphQL server to support my features. My main project was expanding
+          the new Checkout Lite app to additional markets by building the Know Your Customer
+          fields. On top of that, I built out billing and shipping country selection support for
+          Inline Guest Checkout.</p>
+      </div>
+    </section>
 
-  <section>
     <h1>THINGS I'M PROUD OF</h1>
-    <div>
-      <h2>Top 10 Project in Embedded Systems</h2>
-      <h3>May 2019</h3>
-      <p>The final project for my Embedded Systems class was open ended and only required that
-        we wrote in C and that it reflected some of the class material. My partner Jonathan
-        Moon and I implemented an air guitar that generates PWM sound waves to pitches according
-        to buttons pressed and if strum is sensed. I was really tough getting started since we
-        both hardly had any hardware experience. We started the project the earliest, and our
-        first question was asking how to use resistors on the breadboard.
-      </p>
-    </div>
-    <div>
-      <h2>2nd place in Call For Code Hackathon</h2>
-      <h3>Sept 2018</h3>
-      <p>Call For Code is a hackathon for natural disaster prepardness. My team and I
-        designed a centralized communication tool for victims and rescuers in the event of
-        a natural disaster that doubles as a weather app for Kenya users.
-      </p>
-    </div>
-    <div>
-      <h2>Featured on Codepen</h2>
-      <h3>Feb 2018</h3>
-      <p>My interest in coding was kickstarted by my sister-in-law when she taught me how to
-        make CSS art on Codepen my freshman year over winter break. I was hooked! I made as
-        many as I could before going back to school. Never would have never have imagined
-        my first pen being featured on Codepen's Februrary newsletter. I was overwhelmed when
-        I first found out. I felt so supported though I was a freshman girl just getting started.
-      </p>
-    </div>
-  </section>
-
+    <section>
+      <div class="topic-wrapper" id="embsys">
+        <div class="title" id="paypal">
+          <h2>Top 10 Project in Embedded Systems</h2>
+          <h3>May 2019</h3>
+        </div>
+        <p>The final project for my Embedded Systems class was open ended and only required that
+          we wrote in C and that it reflected some of the class material. My partner Jonathan
+          Moon and I implemented an air guitar that generates PWM sound waves to pitches according
+          to buttons pressed and if strum is sensed. I was really tough getting started since we
+          both hardly had any hardware experience. We started the project the earliest, and our
+          first question was asking how to use resistors on the breadboard.
+        </p>
+      </div>
+      <div class="topic-wrapper" id="hack">
+        <div class="title" id="paypal">
+          <h2>2nd place in Call For Code Hackathon</h2>
+          <h3>Sept 2018</h3>
+        </div>
+        <p>Call For Code is a hackathon for natural disaster prepardness. My team and I
+          designed a centralized communication tool for victims and rescuers in the event of
+          a natural disaster that doubles as a weather app for Kenya users.
+        </p>
+      </div>
+      <div class="topic-wrapper" id="codepen">
+        <div class="title" id="paypal">
+          <h2>Featured on Codepen</h2>
+          <h3>Feb 2018</h3>
+        </div>
+        <p>My interest in coding was kickstarted by my sister-in-law when she taught me how to
+          make CSS art on Codepen my freshman year over winter break. I was hooked! I made as
+          many as I could before going back to school. Never would have never have imagined
+          my first pen being featured on Codepen's Februrary newsletter. I was overwhelmed when
+          I first found out. I felt so supported though I was a freshman girl just getting started.
+        </p>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
