@@ -40,7 +40,7 @@ a {
 
 section {
   background: white;
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
   box-shadow: 15px 15px 30px 10px #DED3C6;
   display: flex;
   flex-direction: column;
@@ -107,22 +107,35 @@ li {
 /* nav bar styling end */
 
 /* section title styling start */
-.section-title {
-  border-radius: 20px 20px 0 0;
-  justify-content: center;
-  padding: 20px;
+h1.section-title {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-top: 30px;
 }
 
-#upcoming {
+#upcoming-title::after, #past-title::after, #proud-title::after {
+  content: "";
+  display: block;
+  align-self: center;
+  margin-top: 10px;
+  top: 10px;
+  height: 2px;
+}
+
+#upcoming-title::after {
   background: var(--redOrange);
+  width: 129px;
 }
 
-#past {
+#past-title::after {
+  background: var(--oliveGreen);
+  width: 90px;
+}
+
+#proud-title::after {
   background: var(--coral);
-}
-
-#proud {
-  background: rgb(152, 155, 112);
+  width: 255px;
 }
 /* section title styling end */
 
@@ -138,7 +151,7 @@ li {
   align-self: center;
   height: 1px;
   width: 900px;
-  background:  rgb(152, 155, 112);
+  background: coral;
 }
 /* divider styling end */
 
