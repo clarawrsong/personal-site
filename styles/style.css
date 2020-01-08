@@ -3,6 +3,7 @@
   --redOrange:#EE7840;
   --champagne:#F0DAC0;
   --coral:#F6A970;
+  --lightGrey: rgb(121, 121, 121);
 }
 
 html, body {
@@ -14,52 +15,44 @@ html, body {
 }
 
 h1, h2, h3 {
+  color: rgb(48, 48, 48);
   font-weight: 250;
   margin: 0;
 }
 
 h1 {
-  margin: 40px 0px 10px 0px;
+  display: flex;
 }
 
 h2 {
   width: 200px;
 }
 
-p {
+p, a {
+  color: var(--lightGrey);
   font-weight: lighter;
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
-  background: #EE7840;
-  border-radius: 20px;
+  background: white;
+  border-radius: 0 0 20px 20px;
   box-shadow: 15px 15px 30px 10px #DED3C6;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 70px;
-}
-
-ul {
-  list-style: none;
-  padding: 0 20px;
-  margin-top: 50px;
-}
-
-li {
-  padding: 10px;;
 }
 
 .content {
   position: absolute;
-  margin-top: 50px;
+  margin-top: 80px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 1100px;
-}
-
-.sidenav {
-  position: fixed;
-  height: 100%;
-  width: 150px;
 }
 
 .topic-wrapper {
@@ -67,13 +60,85 @@ li {
   padding: 50px;
 }
 
-.title {
-  /* background: green; */
+.item-title {
   padding-right: 150px;
   width: 200px;
 }
 
-#research {
-  background: rgb(129, 131, 89);
-  border-radius: 0 0 20px 20px;
+.date {
+  color: rgb(121, 121, 121);
+  font-size: 16px;;
+  margin-top: 20px;;
 }
+
+/* nav bar styling start */
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  padding-top: 80px;
+  position: fixed;
+  height: 100%;
+  width: 150px;
+}
+
+h1.sidenav-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p.sidenav-text, a.sidenav-text {
+  font-size: 16px;
+}
+
+p.sidenav-text {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 6px;
+}
+/* nav bar styling end */
+
+/* section title styling start */
+.section-title {
+  border-radius: 20px 20px 0 0;
+  justify-content: center;
+  padding: 20px;
+}
+
+#upcoming {
+  background: var(--redOrange);
+}
+
+#past {
+  background: var(--coral);
+}
+
+#proud {
+  background: rgb(152, 155, 112);
+}
+/* section title styling end */
+
+/* divider styling start */
+.upcoming-divider {
+  align-self: center;
+  height: 1px;
+  width: 900px;
+  background: var(--redOrange);
+}
+
+.proud-divider {
+  align-self: center;
+  height: 1px;
+  width: 900px;
+  background:  rgb(152, 155, 112);
+}
+/* divider styling end */
+

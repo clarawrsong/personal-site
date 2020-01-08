@@ -10,12 +10,24 @@
 
 <body>
   <div class="sidenav">
-    <ul>
+    <div>
+      <h1 class="sidenav-text">Contact</h1>
+      <p class="sidenav-text">clarawrsong@gmail.com</p>
+    </div>
+    <div>
+      <h1 class="sidenav-text">Check me out</h1>
+      <ul>
+        <li><a class="sidenav-text" href="https://twitter.com/clarawrsong" target="_blank">twitter</a></li>
+        <li><a class="sidenav-text" href="https://codepen.io/clarawrsong" target="_blank">codepen</a></li>
+        <li><a class="sidenav-text" href="https://www.linkedin.com/in/clarawrsong/" target="_blank">linkedin</a></li>
+      </ul>
+    </div>
+    <!-- <ul>
       <li>CLARA SONG</li>
       <li>UPCOMING</li>
       <li>PAST XP</li>
       <li>THINGS I'M PROUD OF</li>
-    </ul>
+    </ul> -->
   </div>
 
   <div class="content">
@@ -32,11 +44,12 @@
       </div>
     </section>
 
-    <h1>UPCOMING</h1>
-    <section>
-      <div class="topic-wrapper" id="google-wrapper">
-        <div class="title" id="google-title">
-          <h2>Google Summer 2020 Internship</h2>
+    <h1 class="section-title" id="upcoming">UPCOMING</h1>
+    <section id="upcoming-section">
+      <div class="topic-wrapper" id="google">
+        <div class="item-title">
+          <h2>Google SWE Internship</h2>
+          <h3 class="date">Summer 2020</h3>
         </div>
         <div class="description" id="google-description">
           <p>I'm excited to say that I will working for Google this coming summer! I'll be in Bellevue,
@@ -52,9 +65,11 @@
           </p>
         </div>
       </div>
+      <div class="upcoming-divider"></div>
       <div class="topic-wrapper" id="research">
-        <div class="title" id="research-title">
-          <h2>Starting HCI Research</h2>
+        <div class="item-title">
+          <h2>Human Computer Interaction (HCI) Research</h2>
+          <h3 class="date">January 2020</h3>
         </div>
         <div class="description" id="research-description">
           <p>Towards the end of last fall semester, I looked into Human Computer Interaction
@@ -71,11 +86,12 @@
       </div>
     </section>
 
-    <h1>PAST XP</h1>
+    <h1 class="section-title" id="past">PAST XP</h1>
     <section>
       <div class="topic-wrapper" id="paypal">
-        <div class="title" id="paypal-title">
-          <h2>PayPal Summer 2019 Internship</h2>
+        <div class="item-title">
+          <h2>PayPal SWE Internship</h2>
+          <h3 class="date">Summer 2019</h3>
         </div>
         <p>This was my first internship! I was on the Guest-Checkout team, and I mainly did
           frontend web development work using JavaScript with React, Redux, and Emotion. I also
@@ -86,12 +102,12 @@
       </div>
     </section>
 
-    <h1>THINGS I'M PROUD OF</h1>
+    <h1 class="section-title" id="proud">THINGS I'M PROUD OF</h1>
     <section>
       <div class="topic-wrapper" id="embsys">
-        <div class="title" id="paypal">
+        <div class="item-title">
           <h2>Top 10 Project in Embedded Systems</h2>
-          <h3>May 2019</h3>
+          <h3 class="date">May 2019</h3>
         </div>
         <p>The final project for my Embedded Systems class was open ended and only required that
           we wrote in C and that it reflected some of the class material. My partner Jonathan
@@ -101,20 +117,22 @@
           first question was asking how to use resistors on the breadboard.
         </p>
       </div>
+      <div class="proud-divider"></div>
       <div class="topic-wrapper" id="hack">
-        <div class="title" id="paypal">
+        <div class="item-title">
           <h2>2nd place in Call For Code Hackathon</h2>
-          <h3>Sept 2018</h3>
+          <h3 class="date">Sept 2018</h3>
         </div>
         <p>Call For Code is a hackathon for natural disaster prepardness. My team and I
           designed a centralized communication tool for victims and rescuers in the event of
           a natural disaster that doubles as a weather app for Kenya users.
         </p>
       </div>
+      <div class="proud-divider"></div>
       <div class="topic-wrapper" id="codepen">
-        <div class="title" id="paypal">
+        <div class="item-title">
           <h2>Featured on Codepen</h2>
-          <h3>Feb 2018</h3>
+          <h3 class="date">Feb 2018</h3>
         </div>
         <p>My interest in coding was kickstarted by my sister-in-law when she taught me how to
           make CSS art on Codepen my freshman year over winter break. I was hooked! I made as
