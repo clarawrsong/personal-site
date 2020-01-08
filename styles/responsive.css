@@ -1,0 +1,39 @@
+@media screen and (max-width: 1550px) {
+  body {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  ul, #nav-c1 {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+
+  h1.nav-text {
+    color: transparent;
+  }
+
+  .content {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .nav-wrapper {
+    align-self: center;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0;
+    position: relative;
+    width: 1100px;
+  }
+
+  p.nav-text {
+    margin-bottom: 6px;
+  }
+}
