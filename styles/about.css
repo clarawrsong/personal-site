@@ -3,156 +3,57 @@
   --redOrange:#EE7840;
   --champagne:#F0DAC0;
   --coral:#F6A970;
+  --grey: rgb(121, 121, 121);
+  --almostBlack: rgb(48, 48, 48);
+  --almostWhite: rgb(226, 224, 224);
+  --background: rgb(250, 241, 233);
 }
 
-section.title{
-  background: white;
-  flex-direction: row;
+.about-circle {
+  /* background: white; */
+  align-items: center;
+  border-radius: 100%;
+  box-sizing: border-box;
+  display: flex;  
+  height: 270px;
+  justify-content: center;
+  width: 270px;
 }
 
-h1.title, p.title {
-  width: 150px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-h1.title {
-  font-size: 42px;
-  font-weight: 300;
-  margin-top: 350px;
-}
-
-p.title {
-  color: rgb(103, 103, 103);
-  margin-top: 20px;
-}
-
-#title-text {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-/* circles styling begins */
-#circles-wrapper {
-  position: relative;
-  border-radius: 0 20px 20px 0;
+#about-wrapper {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  height: 600px;
-  width: 800px;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 
-.circle {
-  height: 200px;
-  width: 200px;
+#about-left{
+  background: var(--redOrange);
+  /* border: solid var(--redOrange) 40px; */
+  transition: transform .3s;
 }
 
-#col1 {
+#about-right{
   background: var(--oliveGreen);
-  border-bottom-left-radius: 200px;
+  /* border: solid var(--oliveGreen) 40px; */
+  transition: transform .3s;
 }
 
-#col1::before {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--redOrange);
-  border-radius: 100px;
+#about-left:hover {
+  transform: scale(1.5);
+  border: solid var(--redOrange) 10px;
+} 
+
+#about-right:hover {
+  transform: scale(1.5);
+  border: solid var(--oliveGreen) 10px;
 }
 
-#col1::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--champagne);
-  border-bottom-left-radius: 200px;
+.about-text {
+  display: none;
 }
 
-#col2 {
-  background: var(--champagne);
-  border-radius: 100px;
+.hidden {
+  display: none;
 }
-
-#col2::before {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--coral);
-  border-top-left-radius: 200px;
-}
-
-#col2::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--oliveGreen);
-  border-top-right-radius: 200px;
-}
-
-#col3 {
-  background: var(--redOrange);
-  border-top-left-radius: 200px;
-}
-
-#col3::before {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--champagne);
-  border-top-right-radius: 200px;
-}
-
-#col3::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--coral);
-  border-radius: 100px;
-}
-
-#col4 {
-  background: var(--redOrange);
-  border-radius: 0 20px 200px 0;
-}
-
-#col4::before {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--oliveGreen);
-  border-radius: 100px;
-}
-
-#col4::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 200px;
-  height: 200px;
-  width: 200px;
-  background: var(--redOrange);
-  border-bottom-right-radius: 200px;
-}
-/* circles styling ends */

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Clara Song's personal site</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/title-section.css" />
   <link rel="stylesheet" type="text/css" href="styles/about.css" />
   <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
 </head>
@@ -45,6 +46,51 @@
       </div>
     </section>
 
+    <div id="about-wrapper">
+      <div class="about-circle" id="about-left">
+        <h1>Why I Dream</h1>
+        <p class="about-text">I spent my first year at Cornell University slowly building confidence to major in
+          computer science, and a
+          second year wrestling my insecurities in my classes and grades. Seeing only intelligent, ambitious people in
+          the major, I thought I couldn’t compete as a girl who was still unsure of the future. During my first taste of
+          industry the summer after sophomore year, I realized there was so much more to computer science than what my
+          classes taught. I was inspired and supported by people to dream more about the things that I could do. Now, in
+          my third year at Cornell, I am starting to explore and dream more of what I can do with computer science. My
+          greatest hope is that regardless of where life takes me, I will be confident enough in my field to love what I
+          do and be able to make a difference in people.</p>
+      </div>
+      <img src="./images/udon.png" alt="picture of me">
+      <div class="about-circle" id="about-right">
+        <h1>MY Vision for 2020</h1>
+      </div>
+    </div>
+
+    <!-- <section class="about">
+      <h1 class="section-header" id="about-header">About Me</h2>
+        <div class="topic-wrapper" id="google">
+          <div id="image-container">
+            <img src="./images/udon.png" alt="picture of me">
+            <p class="caption">My favorite bowl of udon at Yume Ga Arukara</p>
+          </div>
+          <p class="about">I spent my first year at Cornell University slowly building confidence to major in computer
+            science, and a second year wrestling my insecurities in my classes and grades. Seeing only intelligent,
+            ambitious people in the major, I thought I couldn’t compete as a girl who was still unsure of the future.
+            During my first taste of industry the summer after sophomore year, I realized there was so much more to
+            computer science than just what my classes taught. I was inspired and supported by people to dream more
+            about the things that I could do. Now, in my third year at Cornell, I am starting to explore and dream more
+            of what I can do with computer science. My greatest hope is that regardless of where life takes me, I will
+            be confident enough in my field to love what I do and be able to make a difference in people.
+          </p>
+          <p class="about">
+            As of now, I want to explore technologies that will equip me for real world application that help people. I
+            took a course on Machine Learning last fall, and I’m excited to take a course on Computer Vision this
+            spring. I’m hoping to apply what I learn from these classes through research or small projects. I want to
+            learn how computer science is being used in areas such as agriculture, sustainability, and human computer
+            interaction.
+          </p>
+        </div>
+    </section> -->
+
     <section id="upcoming-section">
       <h1 class="section-header" id="upcoming-header">UPCOMING</h1>
       <div class="topic-wrapper" id="google">
@@ -52,19 +98,11 @@
           <h2>Google SWE Internship</h2>
           <h3 class="date">Summer 2020</h3>
         </div>
-        <div class="description" id="google-description">
-          <p>I'm excited to say that I will working for Google this coming summer! I'll be in Bellevue,
-            Washington on the Chrome OS Enterprise team.
-            <!-- I'm especially so thankful to one of my
-            interviewers for this opportunity. She was the first female interviewer I have ever had.
-        Her interview question was unique and fun, and she was so lively to talk to! She was a
-        huge encouragement to me as a fellow woman in computer science. I am so glad to be
-        interviewed by her regardless of the results, I thought at the time.  -->
-            I'll be doing backend development for the first time! I'm glad that I'll be trying out something
-            new this coming summer, and I've been introducing myself to more backend dev before the
-            semester starts in order to prepare.
-          </p>
-        </div>
+        <p>I'm excited to say that I will working for Google this coming summer! I'll be in Bellevue, Washington on the
+          Chrome OS Enterprise team. I'll be doing backend development for the first time! I'm glad that I'll be trying
+          out something new, and I've been introducing myself to more backend development before the spring semester
+          starts to prepare myself for the summer.
+        </p>
       </div>
       <div class="upcoming-divider"></div>
       <div class="topic-wrapper" id="research">
@@ -72,18 +110,15 @@
           <h2>Human Computer Interaction (HCI) Research</h2>
           <h3 class="date">January 2020</h3>
         </div>
-        <div class="description" id="research-description">
-          <p>Towards the end of last fall semester, I looked into Human Computer Interaction
-            research at Cornell, coming into to contact with a couple professors who are gracious
-            to take me in. I thought I didn't like school so I fervently denied considering grad
-            school for 2 years. But, I recently have started questioning whether undergrad is enough.
-            Grades alone have become less of a motivation for me to learn, which has been helpful
-            and hurtful. What I want is to work with people again like I did during my
-            internship last summer. I want to work on things that means more than just a grade. I'm
-            looking forward to doing research this coming spring semester! Hopefully, I'll choose
-            a professor and project soon!
-          </p>
-        </div>
+        <p>Towards the end of last fall semester, I looked into Human Computer Interaction research at Cornell, coming
+          into to contact with a couple professors who are gracious to take me in. Previously, I thought I didn't like
+          school so I fervently denied considering grad school for the last 2 years. But, I recently have started
+          questioning whether undergrad is enough. I realize I am not satisfied with the application in my classes
+          alone, but I want to touch upon technologies like Machine Learning and Computer Vision. I want to work as a
+          team with passionate people like I did during my internship last summer. I want to work on things that are
+          more meaningful than grades. I'm looking forward to doing research this coming spring semester! I hope to
+          choose a professor and project where I can explore and learn the most.
+        </p>
       </div>
     </section>
 
@@ -94,12 +129,14 @@
           <h2>PayPal SWE Internship</h2>
           <h3 class="date">Summer 2019</h3>
         </div>
-        <p>This was my first internship! I was on the Guest-Checkout team, and I mainly did
-          frontend web development work using JavaScript with React, Redux, and Emotion. I also
-          expanded on the GraphQL server to support my features. My main project was expanding
-          the new Checkout Lite app to additional markets by building the Know Your Customer
-          fields. On top of that, I built out billing and shipping country selection support for
-          Inline Guest Checkout.</p>
+        <p>This was my first internship! I was on the Guest-Checkout team, and I mainly did frontend web development
+          work using JavaScript with React, Redux, and Emotion. I also expanded on the GraphQL server to support my
+          features. My main project was expanding the new Checkout Lite app to additional markets by building the Know
+          Your Customer fields. On top of that, I built out billing and shipping country selection support for Inline
+          Guest Checkout. I learned how a team works in real life: how much energy is put into writing readable and
+          long-lasting code, how any doubt or questions are immediately approached to the appropriate people, and how
+          everyone is responsible for checking and double-checking each other’s work.
+        </p>
       </div>
     </section>
 
@@ -110,12 +147,13 @@
           <h2>Top 10 Project in Embedded Systems</h2>
           <h3 class="date">May 2019</h3>
         </div>
-        <p>The final project for my Embedded Systems class was open ended and only required that
-          we wrote in C and that it reflected some of the class material. My partner Jonathan
-          Moon and I implemented an air guitar that generates PWM sound waves to pitches according
-          to buttons pressed and if strum is sensed. I was really tough getting started since we
-          both hardly had any hardware experience. We started the project the earliest, and our
-          first question was asking how to use resistors on the breadboard.
+        <p>The final project for my Embedded Systems class was open ended and only required that we wrote in C and that
+          it reflected some of the class material. My partner Jonathan Moon and I implemented an air guitar that
+          generates PWM sound waves to pitches according to buttons pressed and if strum is sensed. It was really tough
+          getting started since we both hardly had any hardware experience. Starting the project the earliest, our first
+          question was asking how to use resistors on the breadboard. From there, we had fun getting closer to our
+          teaching assistants, tinkering with our hardware components, and practicing Nintendo songs on our finished
+          product for the final presentation video.
         </p>
       </div>
       <div class="proud-divider"></div>
@@ -124,9 +162,10 @@
           <h2>2nd place in Call For Code Hackathon</h2>
           <h3 class="date">Sept 2018</h3>
         </div>
-        <p>Call For Code is a hackathon for natural disaster prepardness. My team and I
-          designed a centralized communication tool for victims and rescuers in the event of
-          a natural disaster that doubles as a weather app for Kenya users.
+        <p>Call For Code is a hackathon for natural disaster prepardness. My team and I designed a centralized
+          communication tool for victims and rescuers in the event of a natural disaster that doubles as a weather app
+          for Kenya users. Though I was the only CS major on my team, we were fueled by a teammate’s passion for his
+          country.
         </p>
       </div>
       <div class="proud-divider"></div>
@@ -135,11 +174,12 @@
           <h2>Featured on Codepen</h2>
           <h3 class="date">Feb 2018</h3>
         </div>
-        <p>My interest in coding was kickstarted by my sister-in-law when she taught me how to
-          make CSS art on Codepen my freshman year over winter break. I was hooked! I made as
-          many as I could before going back to school. Never would have never have imagined
-          my first pen being featured on Codepen's Februrary newsletter. I was overwhelmed when
-          I first found out. I felt so supported though I was a freshman girl just getting started.
+        <p>My interest in coding was kickstarted by my sister-in-law when she taught me how to make CSS art on Codepen
+          my freshman year over winter break. I was hooked! I made as many as I could before going back to school. Never
+          would I have imagined my <a class="inline-link" href="https://codepen.io/clarawrsong/pen/dJOMZa"
+            target="_blank">first pen</a> being featured on
+          <a class="inline-link" href="https://codepen.io/spark/62" target="_blank">Codepen's weekly newsletter</a>. I
+          felt so supported in my journey in computer science though I was just getting started.
         </p>
       </div>
     </section>
